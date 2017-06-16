@@ -1,10 +1,10 @@
-# OpenShift Nginx PHP 7 phpservermon 3.11 Cartridge
-Nginx 1.9 with PHP 7.0 phpservermon  on OpenShift.
+# OpenShift Nginx PHP 7 owncloud 10.0.2 Cartridge --- not work ...testing
+Nginx 1.9 with PHP 7.0 owncloud  on OpenShift.
 
 * Nginx: 1.11.6
 * PHP: 7.0.13
 * Composer: 1.2.4
-* phpservermon: 3.11
+* owncloud: 10.0.2
 
 ## Installation
 
@@ -21,5 +21,5 @@ https://github.com/pinodex/openshift-cartridge-nginx-php7
 
 ### Create 
 ```
-rhc app create phpservermon mysql-5.5 cron  http://cartreflect-claytondev.rhcloud.com/github/chio-nzgft/openshift-nginx-php7-phpservermon
+rhc app create owncloud mysql-5.5 http://cartreflect-claytondev.rhcloud.com/github/chio-nzgft/openshift-nginx-php7-owncloud
 ```
