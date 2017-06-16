@@ -21,5 +21,5 @@ https://github.com/pinodex/openshift-cartridge-nginx-php7
 
 ### Create 
 ```
-rhc app create owncloud10 mysql-5.5 http://cartreflect-claytondev.rhcloud.com/github/chio-nzgft/openshift-nginx-php7-owncloud
+rhc app create owncloud10 mysql-5.5 cron http://cartreflect-claytondev.rhcloud.com/github/chio-nzgft/openshift-nginx-php7-owncloud
 ```
