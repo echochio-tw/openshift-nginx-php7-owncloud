@@ -20,7 +20,11 @@ function start() {
      rm -rf www
      unzip owncloud-10.0.2.zip
      rm -rf owncloud-10.0.2.zip
-     mv phpservermon-3.1.1 www
+     mv owncloud www
+     
+     
+     
+     
      mv www/config.php.sample www/config.php
      sed -i 's/db_user/'$(echo $OPENSHIFT_MYSQL_DB_USERNAME)'/g' $OPENSHIFT_REPO_DIR/www/config.php
      sed -i 's/db_pass/'$(echo $OPENSHIFT_MYSQL_DB_PASSWORD)'/g' $OPENSHIFT_REPO_DIR/www/config.php
