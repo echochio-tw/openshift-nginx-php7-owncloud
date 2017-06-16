@@ -25,7 +25,8 @@ function start() {
      mkdir $OPENSHIFT_REPO_DIR/.openshift/cron
      mkdir $OPENSHIFT_REPO_DIR/.openshift/cron/minutely
      echo '#!/bin/bash' > $OPENSHIFT_REPO_DIR/.openshift/cron/minutely/owncloud.sh
-     echo "$OPENSHIFT_PHP_DIR/usr/bin/php $OPENSHIFT_REPO_DIR/www/cron.php" >> $OPENSHIFT_REPO_DIR/.openshift/cron/minutely/owncloud.sh
+         wget script.sh
+     cat  script.sh > $OPENSHIFT_REPO_DIR/.openshift/cron/minutely/owncloud.sh    
      chmod +x $OPENSHIFT_REPO_DIR/.openshift/cron/minutely/owncloud.sh
      $OPENSHIFT_CRON_DIR/bin/control restat
       
