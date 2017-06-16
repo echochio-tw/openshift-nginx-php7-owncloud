@@ -16,10 +16,10 @@ function start() {
     build_config
     if [ ! -f $OPENSHIFT_REPO_DIR/ok ]; then
      cd $OPENSHIFT_REPO_DIR
-     wget https://github.com/chio-nzgft/openshift-nginx-php7-phpservermon/raw/master/phpservermon/phpservermon-3.1.1.tar.gz
+     wget https://download.owncloud.org/community/owncloud-10.0.2.zip
      rm -rf www
-     tar zxvf phpservermon-3.1.1.tar.gz
-     rm -rf phpservermon-3.1.1.tar.gz
+     unzip owncloud-10.0.2.zip
+     rm -rf owncloud-10.0.2.zip
      mv phpservermon-3.1.1 www
      mv www/config.php.sample www/config.php
      sed -i 's/db_user/'$(echo $OPENSHIFT_MYSQL_DB_USERNAME)'/g' $OPENSHIFT_REPO_DIR/www/config.php
