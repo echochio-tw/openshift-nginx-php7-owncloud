@@ -38,7 +38,9 @@ OPENSHIFT_MYSQL_DB_LOG_DIR=/var/lib/openshift/59448c947628e16a810000e9/app-root/
 ```
 ### web http://owncloud10-XXXXX.rhcloud.com set info
 
+![alt tag](https://github.com/chio-nzgft/openshift-nginx-php7-owncloud/raw/master/pic/owncloud-setup.png)
 
 ### web http://owncloud10-XXXXX.rhcloud.com login
 
+![alt tag](https://github.com/chio-nzgft/openshift-nginx-php7-owncloud/raw/master/pic/owncloud-login.png)
 
