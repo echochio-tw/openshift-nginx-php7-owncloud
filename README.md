@@ -1,4 +1,4 @@
-# OpenShift Nginx PHP 7 owncloud 10.0.2 Cartridge --- not work ...testing
+# OpenShift Nginx PHP 7 owncloud 10.0.2 Cartridge
 Nginx 1.9 with PHP 7.0 owncloud  on OpenShift.
 
 * Nginx: 1.11.6
@@ -21,5 +21,24 @@ https://github.com/pinodex/openshift-cartridge-nginx-php7
 
 ### Create 
 ```
-rhc app create owncloud10 mysql-5.5 cron http://cartreflect-claytondev.rhcloud.com/github/chio-nzgft/openshift-nginx-php7-owncloud
+# rhc app create owncloud10 mysql-5.5 cron http://cartreflect-claytondev.rhcloud.com/github/chio-nzgft/openshift-nginx-php7-owncloud
 ```
+### get DB info
+```
+# rhc ssh owncloud10 'env |grep DB'
+OPENSHIFT_MYSQL_DB_PORT=3306
+OPENSHIFT_MYSQL_DB_HOST=127.12.146.131
+OPENSHIFT_MYSQL_DB_PASSWORD=Q_6HkqQ52cv6
+OPENSHIFT_MYSQL_DB_USERNAME=adminTaMNlPX
+OPENSHIFT_MYSQL_DB_SOCKET=/var/lib/openshift/59448c947628e16a810000e9/mysql//socket/mysql.sock
+OPENSHIFT_MYSQL_DB_URL=mysql://adminTaMNlPX:Q_6HkqQ52cv6@127.12.146.131:3306/
+SSH_ORIGINAL_COMMAND=env |grep DB
+OPENSHIFT_MYSQL_DB_LOG_DIR=/var/lib/openshift/59448c947628e16a810000e9/app-root/logs/
+
+```
+### web http://owncloud10-XXXXX.rhcloud.com set info
+
+
+### web http://owncloud10-XXXXX.rhcloud.com login
+
+
