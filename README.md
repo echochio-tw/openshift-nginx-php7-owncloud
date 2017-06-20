@@ -21,7 +21,7 @@ https://github.com/pinodex/openshift-cartridge-nginx-php7
 
 ### Create 
 ```
-# rhc app create owncloud10 mysql-5.5 cron http://cartreflect-claytondev.rhcloud.com/github/chio-nzgft/openshift-nginx-php7-owncloud
+# rhc app create owncloud10 mysql-5.5 cron http://cartreflect-claytondev.rhcloud.com/github/echochio-tw/openshift-nginx-php7-owncloud
 ```
 ### login info
 ```
@@ -32,5 +32,5 @@ Password : admin
 
 ### web http://owncloud10-XXXXX.rhcloud.com login
 
-![alt tag](https://github.com/chio-nzgft/openshift-nginx-php7-owncloud/raw/master/pic/owncloud-login.png)
+![alt tag](https://github.com/echochio-tw/openshift-nginx-php7-owncloud/raw/master/pic/owncloud-login.png)
 
