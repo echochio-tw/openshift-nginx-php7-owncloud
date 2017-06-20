@@ -15,13 +15,15 @@ function start() {
     create_dirs
     build_config
     if [ ! -f $OPENSHIFT_REPO_DIR/ok ]; then
-      echo "admin" > $OPENSHIFT_DATA_DIR/ok
      cd $OPENSHIFT_REPO_DIR
      wget https://download.owncloud.org/community/owncloud-10.0.2.zip
      rm -rf www
      unzip owncloud-10.0.2.zip
      rm -rf owncloud-10.0.2.zip
      mv owncloud www
+     wget https://raw.githubusercontent.com/chio-nzgft/openshift-nginx-php7-owncloud/master/etc/autoconfig.php
+     mv autoconfig.php www/config/.
+     rm -rf www/config/config.php
      
      mkdir $OPENSHIFT_REPO_DIR/.openshift/cron
      mkdir $OPENSHIFT_REPO_DIR/.openshift/cron/minutely
@@ -29,6 +31,7 @@ function start() {
      cp script.sh $OPENSHIFT_REPO_DIR/.openshift/cron/minutely/owncloud.sh    
      chmod +x $OPENSHIFT_REPO_DIR/.openshift/cron/minutely/owncloud.sh
      $OPENSHIFT_CRON_DIR/bin/control restat
+     touch  $OPENSHIFT_DATA_DIR/ok
     fi
 
     service php-fpm start
