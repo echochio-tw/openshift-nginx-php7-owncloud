@@ -23,22 +23,12 @@ https://github.com/pinodex/openshift-cartridge-nginx-php7
 ```
 # rhc app create owncloud10 mysql-5.5 cron http://cartreflect-claytondev.rhcloud.com/github/chio-nzgft/openshift-nginx-php7-owncloud
 ```
-### get DB info
+### login info
 ```
-# rhc ssh owncloud10 'env |grep DB'
-OPENSHIFT_MYSQL_DB_PORT=3306
-OPENSHIFT_MYSQL_DB_HOST=127.12.146.131
-OPENSHIFT_MYSQL_DB_PASSWORD=Q_6HkqQ52cv6
-OPENSHIFT_MYSQL_DB_USERNAME=adminTaMNlPX
-OPENSHIFT_MYSQL_DB_SOCKET=/var/lib/openshift/59448c947628e16a810000e9/mysql//socket/mysql.sock
-OPENSHIFT_MYSQL_DB_URL=mysql://adminTaMNlPX:Q_6HkqQ52cv6@127.12.146.131:3306/
-SSH_ORIGINAL_COMMAND=env |grep DB
-OPENSHIFT_MYSQL_DB_LOG_DIR=/var/lib/openshift/59448c947628e16a810000e9/app-root/logs/
+username : admin
+Password : admin
 
 ```
-### web http://owncloud10-XXXXX.rhcloud.com set info
-
-![alt tag](https://github.com/chio-nzgft/openshift-nginx-php7-owncloud/raw/master/pic/owncloud-setup.png)
 
 ### web http://owncloud10-XXXXX.rhcloud.com login
 
