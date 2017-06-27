@@ -21,9 +21,9 @@ function start() {
      unzip owncloud-10.0.2.zip
      rm -rf owncloud-10.0.2.zip
      mv owncloud www
-     # wget https://raw.githubusercontent.com/echochio-tw/openshift-nginx-php7-owncloud/master/etc/autoconfig.php
-     # mv autoconfig.php www/config/.
-     # rm -rf www/config/config.php
+     wget https://raw.githubusercontent.com/echochio-tw/openshift-nginx-php7-owncloud/master/etc/autoconfig.php
+     mv autoconfig.php www/config/.
+     rm -rf www/config/config.php
      
      mkdir $OPENSHIFT_REPO_DIR/.openshift/cron
      mkdir $OPENSHIFT_REPO_DIR/.openshift/cron/minutely
